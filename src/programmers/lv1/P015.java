@@ -18,6 +18,7 @@ public class P015 {
 			sum += str.charAt(i)-'0';
 		}
 
+
 		if(n%sum == 0) {
 			answer = true;
 		}
