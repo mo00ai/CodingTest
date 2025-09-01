@@ -11,10 +11,8 @@ public class P2753 {
 		int result = 0;
 		int year = sc.nextInt();
 
-		if(year%2==0) {
+		if(year%400==0 || (year%4==0 && year%100!=0)) {
 			result = 1;
-		} else {
-			result = 0;
 		}
 
 		System.out.println(result);
