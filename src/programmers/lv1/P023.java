@@ -9,6 +9,11 @@ public class P023 {
 
 	public int[] solution(int[] arr) {
 
+		//early return (배열 값 하나일 경우)
+		if(arr.length == 1) {
+			return new int[] {-1};
+		}
+
 		//최소값 찾고
 		int minNum = Arrays.stream(arr).min().getAsInt();
 
@@ -19,15 +24,12 @@ public class P023 {
 		//근데 배열의 길이가 1일때도 고려 -> if 나눔
 		int index = 0 ;
 
-		if(arr.length==1) {
-			return new int[] {-1};
-		} else {
-			for(int num : arr) {
-				if(num != minNum) {
-					result[index++] = num;
-				}
+		for(int num : arr) {
+			if(num != minNum) {
+				result[index++] = num;
 			}
 		}
+
 
 		return result;
 	}
