@@ -34,6 +34,27 @@ public class P023 {
 		return result;
 	}
 
+	public int[] solution2(int[] arr) {
+
+		//early return (배열 값 하나일 경우)
+		if(arr.length == 1) {
+			return new int[] {-1};
+		}
+
+		//최소값 찾고
+		int minNum = Arrays.stream(arr).min().getAsInt();
+
+		List<Integer> result = new ArrayList<>();
+
+		for(int i=0; i< arr.length; i++) {
+			if(arr[i] != minNum) {
+				result.add(arr[i]);
+			}
+		}
+
+		return result.stream().mapToInt(Integer::intValue).toArray();
+	}
+
 	public static void main(String[] args) {
 		P023 sol = new P023();
 
