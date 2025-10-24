@@ -1,9 +1,7 @@
 package programmers.lv2;
 
-import java.util.Arrays;
-
-//39 최대공약수 최소공배수
-public class P0010 {
+//40 이상한 문자 만들기
+public class P010 {
 
 	public String solution(String s) {
 
@@ -40,7 +38,7 @@ public class P0010 {
 	}
 
 	public static void main(String[] args) {
-		P0010 sol = new P0010();
+		P010 sol = new P010();
 
 		String result = sol.solution("try hello world");
 
