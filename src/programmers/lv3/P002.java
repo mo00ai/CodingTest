@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 //47 문자열 내 마음대로 정렬하기
-public class P014 {
+public class P002 {
 
 	public String[] solution(String[] strings, int n) {
 
@@ -29,7 +29,7 @@ public class P014 {
 	}
 
 	public static void main(String[] args) {
-		P014 sol = new P014();
+		P002 sol = new P002();
 
 		String[] result = sol.solution(new String[] {"sun", "bed", "car"}, 1);
 

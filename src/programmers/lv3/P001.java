@@ -1,7 +1,7 @@
 package programmers.lv3;
 
 //46 숫자 문자열과 영단어
-public class P013 {
+public class P001 {
 
 	public int solution(String s) {
 
@@ -16,7 +16,7 @@ public class P013 {
 	}
 
 	public static void main(String[] args) {
-		P013 sol = new P013();
+		P001 sol = new P001();
 
 		int result = sol.solution("one4seveneight");
 
