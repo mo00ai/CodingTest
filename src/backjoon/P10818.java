@@ -9,18 +9,18 @@ public class P10818 {
 
 		int num = sc.nextInt();
 
-		int min = 0;
-		int max = 0;
+		int min = sc.nextInt();
+		int max = min;
 
-		for (int i = 1; i < num; i++) {
+		for (int i = 0; i < num-1; i++) {
 			int input = sc.nextInt();
 
 			if (input < min)  {
-				min = num;
+				min = input;
 			}
 
 			if (input > max)  {
-				max = num;
+				max = input;
 			}
 		}
 
