@@ -1,4 +1,4 @@
-package backjoon;
+package backjoon.beforearray;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package backjoon;
+package backjoon.beforearray;
 
 public class P10171 {
 
