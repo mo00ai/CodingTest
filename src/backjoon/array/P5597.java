@@ -10,17 +10,19 @@ public class P5597 {
 
 		Scanner sc = new Scanner(System.in);
 
-		List<Integer> inputList = new ArrayList<>();
+		boolean[] inputArray = new boolean[31];
 
 		for(int i=0; i<28; i++) {
-			inputList.add(sc.nextInt());
+			int num = sc.nextInt();
+			inputArray[num] = true;
 		}
 
 		for(int i=1; i<=30; i++) {
-			if(!inputList.contains(i)) {
+			if(!inputArray[i]) {
 				System.out.println(i);
 			}
 		}
+
 	}
 
 }
