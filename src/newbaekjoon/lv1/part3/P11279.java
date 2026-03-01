@@ -1,42 +1,30 @@
-package newbaekjoon.lv1.part2;
+package newbaekjoon.lv1.part3;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Scanner;
-import java.util.Set;
 
-public class P1764 {
+public class P11279 {
 
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
 
-		PriorityQueue<Integer> queue = new PriorityQueue<>();
+		int n = sc.nextInt();
+		PriorityQueue<Integer> queue= new PriorityQueue<>(Collections.reverseOrder());
 		StringBuilder sb = new StringBuilder();
 
-		int n = sc.nextInt();
-
 		for(int i=0; i<n; i++) {
-
 			int x = sc.nextInt();
 
 			if(x>0) {
 				queue.add(x);
 			} else if (x==0) {
-
 				if(queue.isEmpty()) {
 					sb.append(0).append("\n");
 				} else {
-					Integer poll = queue.poll();
-					String num = String.valueOf(poll);
-					sb.append(num).append("\n");
-
+					sb.append(queue.poll()).append("\n");
 				}
 			}
 
