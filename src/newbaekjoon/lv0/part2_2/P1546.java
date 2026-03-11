@@ -8,24 +8,27 @@ public class P1546 {
 
 		Scanner sc = new Scanner(System.in);
 
-		int[] arr = new int[9];
-		int max = 0;
-		int index = 1;
+		int m = sc.nextInt();
 
-		for(int i=0; i<9; i++) {
+		double[] arr = new double[m];
+		double max = 0;
 
+
+		for(int i=0; i<m; i++) {
 			arr[i] = sc.nextInt();
 
-			if(arr[i] > max) {
+			if(max < arr[i]) {
 				max = arr[i];
-				index = i;
 			}
-
 		}
 
-		System.out.println(max);
-		System.out.println(index+1);
+		double sum = 0;
 
+		for(double n : arr) {
+			sum += n/max*1000;
+		}
+
+		System.out.println(sum/m);
 
 	}
 
