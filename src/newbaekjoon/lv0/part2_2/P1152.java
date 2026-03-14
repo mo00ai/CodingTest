@@ -16,6 +16,9 @@ public class P1152 {
 			System.out.println(line.split(" ").length);
 		}
 
+		if(true) {
+
+		}
 
 	}
 
