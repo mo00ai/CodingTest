@@ -8,10 +8,16 @@ public class P2908 {
 
 		Scanner sc = new Scanner(System.in);
 
-		int a = sc.nextInt();
-		int b = sc.nextInt();
+		String a= sc.next();
+		String b= sc.next();
 
+		String ra = new StringBuilder(a).reverse().toString();
+		String rb = new StringBuilder(b).reverse().toString();
 
+		int A = Integer.parseInt(a);
+		int B = Integer.parseInt(b);
+
+		System.out.println(Math.max(A,B));
 
 	}
 
