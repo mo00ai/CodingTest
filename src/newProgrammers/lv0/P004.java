@@ -31,11 +31,11 @@ public class P004 {
 			}
 		}
 
-		for (int num : arr) {
-			// if(c>=)
+		for (int s : arr) {
+			if(s>=1) {
+				answer++;
+			}
 		}
-
-
 
 		return answer;
 	}
